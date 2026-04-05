@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marina DiPonio — Web Design</title>
+  <meta name="description" content="Thoughtful web design for real estate, creative professionals, and emerging brands." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       HERO SECTION (Dot Grid Background)
+       ════════════════════════════════════════ -->
+  <div class="hero-wrapper">
+    <div class="dot-grid-bg">
+      <div class="dot-grid-pattern"></div>
+      <div class="dot-grid-wash wash-blue"></div>
+      <div class="dot-grid-wash wash-warm"></div>
+      <div class="dot-grid-fade"></div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="site-header">
+      <a href="#" class="logo" onclick="navigateTo('work'); return false;">
+        <img src="images/logo.png" alt="Marina DiPonio" class="logo-img" />
+      </a>
+      <nav class="site-nav">
+        <a href="#" class="nav-link active" data-page="work" onclick="navigateTo('work'); return false;">Work</a>
+        <a href="#" class="nav-link" data-page="about" onclick="navigateTo('about'); return false;">About</a>
+        <a href="#" class="nav-link" data-page="contact" onclick="navigateTo('contact'); return false;">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Text (Work page only) -->
+    <section class="hero-content" id="hero-content">
+      <h1 class="hero-title">
+        Websites that tell<br />
+        <span class="hero-gradient">your story</span>
+      </h1>
+      <p class="hero-subtitle">
+        Thoughtful web design for real estate, creative professionals, and emerging brands.
+      </p>
+    </section>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       WORK PAGE
+       ════════════════════════════════════════ -->
+  <section class="page-section active" id="page-work">
+    <div class="projects-grid">
+
+      <!-- Project 1: Emma DiPonio -->
+      <div class="project-card" style="--project-color: #E8D5C4; --project-accent: #C4A882;">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="browser-url">emmadiponiomd.com</div>
+          </div>
+          <div class="browser-viewport">
+            <img src="images/emma-screenshot.png" alt="Emma DiPonio website" class="scroll-image" />
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Emma DiPonio</h3>
+          <p class="project-subtitle">Personal Branding Website</p>
+          <div class="project-tags">
+            <span class="tag">Web Design</span>
+            <span class="tag">Built with Claude</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Miles Summit -->
+      <div class="project-card" style="--project-color: #B8CDD6; --project-accent: #7BA3B3;">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="browser-url">milessummit.com</div>
+          </div>
+          <!-- In Progress Badge -->
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            In Progress
+          </div>
+          <div class="browser-viewport">
+            <!--
+              ╔═══════════════════════════════════════════════════╗
+              ║  REPLACE THIS: Add your full-page screenshot     ║
+              ║  of Miles Summit as an <img> tag below.          ║
+              ╚═══════════════════════════════════════════════════╝
+            -->
+            <!-- <img src="images/miles-screenshot.png" alt="Miles Summit website" class="scroll-image" /> -->
+            <div class="placeholder-page" style="--pc: #B8CDD6; --pa: #7BA3B3;"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Miles Summit</h3>
+          <p class="project-subtitle">Real Estate Pre-Launch</p>
+          <div class="project-tags">
+            <span class="tag">Web Design</span>
+            <span class="tag">WordPress</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: StarTea -->
+      <div class="project-card" style="--project-color: #C8D6B8; --project-accent: #9BB87A;">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="browser-url">startea.co</div>
+          </div>
+          <div class="browser-viewport">
+            <img src="images/startea-screenshot.png" alt="StarTea website" class="scroll-image" />
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">StarTea</h3>
+          <p class="project-subtitle">Wellness Consumables</p>
+          <div class="project-tags">
+            <span class="tag">Web Design</span>
+            <span class="tag">Prototype</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       ABOUT PAGE
+       ════════════════════════════════════════ -->
+  <section class="page-section" id="page-about">
+    <div class="about-content">
+      <h2 class="page-title">Hey, I'm Marina</h2>
+      <div class="title-accent"></div>
+
+      <p>
+        I'm a designer graduating in May 2026 from the
+        <strong>University of Florida</strong> with a Bachelor of Arts in
+        Digital Arts &amp; Sciences. Originally from <strong>Puerto Rico</strong>,
+        I'm currently based in Gainesville, Florida.
+      </p>
+
+      <p>
+        My background spans game design and web/app design, and I bring a sharp
+        eye for detail and deep dedication to every project I take on. Whether
+        it's crafting a clean landing page for a real estate launch or building
+        a brand identity from scratch, I care about getting the little things
+        right — because the little things are what make a design feel intentional.
+      </p>
+
+      <p>
+        I'm friendly, I'm reliable, and I'm genuinely excited to help bring your
+        vision to life.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card"><span class="skill-icon">🌐</span><span class="skill-name">Web Design</span></div>
+        <div class="skill-card"><span class="skill-icon">📱</span><span class="skill-name">App Design</span></div>
+        <div class="skill-card"><span class="skill-icon">🎮</span><span class="skill-name">Game Design</span></div>
+        <div class="skill-card"><span class="skill-icon">🔍</span><span class="skill-name">UX Research</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       CONTACT PAGE
+       ════════════════════════════════════════ -->
+  <section class="page-section" id="page-contact">
+    <div class="contact-content">
+      <h2 class="page-title">Let's work together</h2>
+      <div class="title-accent"></div>
+
+      <p>
+        Have a project in mind? I'd love to hear about it. Reach out through the
+        form below or connect with me directly.
+      </p>
+
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/marinadiponio" target="_blank" rel="noreferrer" class="contact-link-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:marinadiponio@proton.me" class="contact-link-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email
+        </a>
+      </div>
+
+      <!-- Contact Form (Formspree) -->
+      <form id="contact-form" action="https://formspree.io/f/xojppnrj" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
+      <!-- Success message (shown after submit) -->
+      <div id="form-success" class="form-success" style="display: none;">
+        <div class="success-icon">✨</div>
+        <h3>Message sent!</h3>
+        <p>Thank you for reaching out. I'll get back to you soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <span>© 2026 Marina DiPonio</span>
+    <div class="footer-links">
+      <a href="#" onclick="navigateTo('contact'); return false;">LinkedIn</a>
+      <a href="#" onclick="navigateTo('contact'); return false;">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
