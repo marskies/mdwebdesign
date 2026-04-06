@@ -363,8 +363,13 @@ strong { font-weight: 500; color: #1a1a1a; }
    ════════════════════════════════════════ */
 .about-content {
   padding: 64px 72px 96px;
-  max-width: 900px;
+  max-width: 1400px;
+  margin: 0 auto;
   animation: fadeInUp 0.6s ease;
+}
+
+.about-content p {
+  max-width: 680px;
 }
 
 .page-title {
@@ -397,6 +402,7 @@ strong { font-weight: 500; color: #1a1a1a; }
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   margin-top: 16px;
+  max-width: 680px;
 }
 
 .skill-card {
@@ -425,8 +431,13 @@ strong { font-weight: 500; color: #1a1a1a; }
    ════════════════════════════════════════ */
 .contact-content {
   padding: 64px 72px 96px;
-  max-width: 840px;
+  max-width: 1400px;
+  margin: 0 auto;
   animation: fadeInUp 0.6s ease;
+}
+
+.contact-content p {
+  max-width: 680px;
 }
 
 .contact-links {
@@ -434,6 +445,7 @@ strong { font-weight: 500; color: #1a1a1a; }
   gap: 16px;
   margin-bottom: 40px;
   flex-wrap: wrap;
+  max-width: 680px;
 }
 
 .contact-link-btn {
@@ -456,6 +468,7 @@ strong { font-weight: 500; color: #1a1a1a; }
 /* ── Form ── */
 .form-group {
   margin-bottom: 16px;
+  max-width: 680px;
 }
 
 .form-group label {
