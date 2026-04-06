@@ -25,8 +25,8 @@ strong { font-weight: 500; color: #1a1a1a; }
    ════════════════════════════════════════ */
 @keyframes scrollUp {
   0%   { transform: translateY(0); }
-  42%  { transform: translateY(-60%); }
-  50%  { transform: translateY(-60%); }
+  42%  { transform: translateY(-52%); }
+  50%  { transform: translateY(-52%); }
   92%  { transform: translateY(0); }
   100% { transform: translateY(0); }
 }
@@ -303,7 +303,7 @@ strong { font-weight: 500; color: #1a1a1a; }
 /* ── Scrolling Screenshot ── */
 .scroll-image {
   width: 100%;
-  animation: scrollUp 12s linear infinite;
+  /* Animation set dynamically by JS based on image height */
 }
 
 /* ── Placeholder (delete when real screenshots added) ── */
