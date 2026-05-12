@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body id="top">
 
   <!-- ════════════════════════════════════════
        HERO SECTION (Dot Grid Background)
@@ -25,13 +25,13 @@
 
     <!-- Header / Nav -->
     <header class="site-header">
-      <a href="#" class="logo" onclick="navigateTo('work'); return false;">
+      <a href="#top" class="logo">
         <img src="logo.png" alt="Marina DiPonio" class="logo-img" />
       </a>
       <nav class="site-nav">
-        <a href="#" class="nav-link active" data-page="work" onclick="navigateTo('work'); return false;">Work</a>
-        <a href="#" class="nav-link" data-page="about" onclick="navigateTo('about'); return false;">About</a>
-        <a href="#" class="nav-link" data-page="contact" onclick="navigateTo('contact'); return false;">Contact</a>
+        <a href="#work" class="nav-link active">Work</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </header>
 
@@ -50,7 +50,7 @@
   <!-- ════════════════════════════════════════
        WORK PAGE
        ════════════════════════════════════════ -->
-  <section class="page-section active" id="page-work">
+  <section class="page-section active" id="work">
     <div class="projects-grid">
 
       <!-- Project 1: Emma DiPonio -->
@@ -141,7 +141,7 @@
   <!-- ════════════════════════════════════════
        ABOUT PAGE
        ════════════════════════════════════════ -->
-  <section class="page-section" id="page-about">
+  <section class="page-section" id="about">
     <div class="about-content">
       <h2 class="page-title">Hey, I'm Marina</h2>
       <div class="title-accent"></div>
@@ -178,7 +178,7 @@
   <!-- ════════════════════════════════════════
        CONTACT PAGE
        ════════════════════════════════════════ -->
-  <section class="page-section" id="page-contact">
+  <section class="page-section" id="contact">
     <div class="contact-content">
       <h2 class="page-title">Let's work together</h2>
       <div class="title-accent"></div>
@@ -208,8 +208,7 @@
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="your@email.com" required />
-        </div>
-        <div class="form-group">
+</div>        <div class="form-group">
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
         </div>
@@ -231,8 +230,8 @@
   <footer class="site-footer">
     <span>© 2026 Marina DiPonio</span>
     <div class="footer-links">
-      <a href="#" onclick="navigateTo('contact'); return false;">LinkedIn</a>
-      <a href="#" onclick="navigateTo('contact'); return false;">Email</a>
+      <a href="https://linkedin.com/in/marinadiponio" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="mailto:marinadiponio@proton.me">Email</a>
     </div>
   </footer>
 
