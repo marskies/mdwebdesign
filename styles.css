@@ -769,7 +769,6 @@ strong { font-weight: 500; color: #1a1a1a; }
          width: 100%;
          height: auto;
   }
-  .about-content p:nth-of-type(1) { order: 4; }
-  .about-content p:nth-of-type(2) { order: 5; }
-  .about-content .skills-grid { order: 6; }
+    .about-content p { order: 4; }
+       .about-content .skills-grid { order: 5; }
 }
