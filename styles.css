@@ -748,3 +748,28 @@ strong { font-weight: 500; color: #1a1a1a; }
     padding: 20px 20px;
   }
 }
+@media (max-width: 580px) {
+  /* Mobile: reorder portrait between heading and paragraph; make it smaller */
+  .about-layout {
+         display: flex;
+         padding: 48px 20px 72px;
+         flex-direction: column;
+  }
+  .about-content {
+         display: contents;
+  }
+  .about-content .page-title { order: 1; }
+  .about-content .title-accent { order: 2; }
+  .about-portrait {
+         order: 3;
+         max-width: 200px;
+         margin: 16px auto 8px;
+  }
+  .about-portrait img {
+         width: 100%;
+         height: auto;
+  }
+  .about-content p:nth-of-type(1) { order: 4; }
+  .about-content p:nth-of-type(2) { order: 5; }
+  .about-content .skills-grid { order: 6; }
+}
