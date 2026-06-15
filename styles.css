@@ -772,3 +772,160 @@ strong { font-weight: 500; color: #1a1a1a; }
     .about-content p { order: 4; }
        .about-content .skills-grid { order: 5; }
 }
+/* ════════════════════════════════════════
+   HERO SCRAPBOOK CALLOUTS
+   ════════════════════════════════════════ */
+.mockup-stage {
+  position: relative;
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-stage .hero-mockup {
+  position: relative;
+  z-index: 2;
+}
+
+.callout {
+  position: absolute;
+  z-index: 5;
+  font-family: 'Caveat', 'Outfit', cursive;
+  font-size: clamp(13px, 1.4vw + 9px, 20px);
+  line-height: 1.15;
+  font-weight: 600;
+  color: #2a2622;
+  max-width: 175px;
+  padding: 12px 16px;
+  background: #fffdf7;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  box-shadow: 0 6px 16px rgba(60, 50, 40, 0.14);
+  text-align: center;
+  will-change: transform;
+}
+
+/* Note 1 — upper left, with washi tape. driftA = down-right sway + wobble */
+.callout--1 {
+  top: 4%;
+  left: -8%;
+  background: #fff8ef;
+  animation: driftA 9s ease-in-out infinite;
+}
+
+/* Note 2 — right side, pinned. driftB = up-left sway + opposite wobble */
+.callout--2 {
+  top: 38%;
+  right: -10%;
+  background: #f3f8fa;
+  animation: driftB 11s ease-in-out infinite;
+}
+
+/* Note 3 — lower, with doodle arrow. driftC = slow bob + gentle wobble */
+.callout--3 {
+  bottom: 2%;
+  left: 6%;
+  background: #f4f8ef;
+  animation: driftC 10s ease-in-out infinite;
+}
+
+/* Each keyframe bakes in the note's resting rotation so it floats AND wobbles */
+@keyframes driftA {
+  0%   { transform: translate(0, 0) rotate(-5deg); }
+  25%  { transform: translate(7px, -9px) rotate(-2.5deg); }
+  50%  { transform: translate(11px, 4px) rotate(-6.5deg); }
+  75%  { transform: translate(3px, 9px) rotate(-3.5deg); }
+  100% { transform: translate(0, 0) rotate(-5deg); }
+}
+
+@keyframes driftB {
+  0%   { transform: translate(0, 0) rotate(4deg); }
+  25%  { transform: translate(-9px, 7px) rotate(6.5deg); }
+  50%  { transform: translate(-4px, -10px) rotate(2deg); }
+  75%  { transform: translate(-11px, -3px) rotate(5.5deg); }
+  100% { transform: translate(0, 0) rotate(4deg); }
+}
+
+@keyframes driftC {
+  0%   { transform: translate(0, 0) rotate(-2.5deg); }
+  25%  { transform: translate(-6px, -8px) rotate(-0.5deg); }
+  50%  { transform: translate(5px, -12px) rotate(-4deg); }
+  75%  { transform: translate(6px, -5px) rotate(-1.5deg); }
+  100% { transform: translate(0, 0) rotate(-2.5deg); }
+}
+
+/* Washi tape strip on note 1 */
+.callout__tape {
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  width: 56px;
+  height: 22px;
+  transform: translateX(-50%) rotate(-3deg);
+  background: rgba(196, 168, 130, 0.45);
+  border-left: 1px dashed rgba(255, 255, 255, 0.5);
+  border-right: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+/* Pin dot on note 2 */
+.callout__pin {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle at 35% 30%, #9ec1cf, #7BA3B3);
+  border-radius: 50%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Doodle arrow on note 3 */
+.callout__arrow {
+  position: absolute;
+  top: -30px;
+  right: -14px;
+  width: 64px;
+  height: 32px;
+  color: #9BB87A;
+}
+.callout__arrow svg { width: 100%; height: 100%; display: block; }
+
+@media (prefers-reduced-motion: reduce) {
+  .callout { animation: none; }
+  .callout--1 { transform: rotate(-5deg); }
+  .callout--2 { transform: rotate(4deg); }
+  .callout--3 { transform: rotate(-2.5deg); }
+}
+
+/* ── Mobile: stack callouts as simple notes below the mockup ── */
+@media (max-width: 900px) {
+  .mockup-stage {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .callout {
+    position: static;
+    transform: none;
+    animation: none;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  .callout__tape,
+  .callout__pin,
+  .callout__arrow {
+    display: none;
+  }
+
+  .callout--1 { border-left: 4px solid #C4A882; }
+  .callout--2 { border-left: 4px solid #7BA3B3; }
+  .callout--3 { border-left: 4px solid #9BB87A; }
+}
