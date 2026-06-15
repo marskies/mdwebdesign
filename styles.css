@@ -142,7 +142,7 @@ strong { font-weight: 500; color: #1a1a1a; }
 .hero-content {
   position: relative;
   z-index: 10;
-  padding: 80px 72px 32px;
+  padding: 80px 72px 64px;
   max-width: 1400px;
   margin: 0 auto;
   animation: fadeInUp 0.8s ease;
