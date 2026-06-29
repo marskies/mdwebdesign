@@ -110,7 +110,7 @@ strong { font-weight: 500; color: #1a1a1a; }
 }
 
 .logo { display: flex; align-items: center; }
-.logo-img { height: 32px; width: auto; object-fit: contain; }
+.logo-img { height: 56px; width: auto; object-fit: contain; }
 
 .site-nav {
   display: flex;
